@@ -1,0 +1,450 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.App {
+    text-align: center;
+    background-color: #210340;
+    color: #ffffff;
+}
+
+#link-nav{
+    text-decoration: none !important;
+    color: #f2f2f2 !important;
+    margin: 10px;
+
+
+}
+
+#link-nav:hover{
+    color:  rgb(255, 150, 84) !important; ;
+}
+
+
+.navbar-form .navbar-brand {
+    color: white;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.skytour-color {
+    font-size: 2rem;
+    font-weight: bold;
+    background-image: linear-gradient(
+        to right,
+        rgb(71, 197, 255),
+        rgb(194, 0, 120),
+        rgb(255, 94, 0)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.mx-auto {
+    font-weight: bold;
+}
+
+
+.sign-up {
+    font-weight: 500 !important;
+    text-decoration: none !important;
+    color: #f2f2f2 !important;
+}
+.sign-up:hover{
+    color:  rgb(255, 150, 84) !important;
+}
+
+
+.navbar-toggler{
+background-color: #ffffff !important;
+}
+
+/* HEROIMAGE */
+.hero-image {
+    background-image: url("../src/image/plane orange.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  .hero-text {
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    right: 0;
+    margin: 50px;
+  }
+
+/* Search component */
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.search-form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    width: 80%;
+}
+
+.search-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    flex-basis: calc(33.33% - 1rem);
+}
+
+.search-field label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: rgb(255, 150, 84);
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    padding: 0.5rem;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.input-container input[type='text'],
+.input-container input[type='date'],
+.input-container input[type='range'] {
+    border: none;
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    padding: 0.5rem;
+    outline: none;
+    width: 100%;
+}
+
+.icon {
+    font-size: 1.2rem;
+    color: rgb(255, 150, 84);
+}
+
+.price-value {
+    margin-left: 0.5rem;
+    font-weight: bold;
+    color: rgb(255, 150, 84);
+}
+
+.search-icon {
+    font-weight: 500;
+}
+
+.search-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    background-color: rgb(255, 150, 84);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.search-button:hover {
+    background-color: rgb(255, 113, 25);
+}
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+::-webkit-calendar-picker-indicator {
+    color: transparent;
+}
+
+
+/* Slide section */
+.slide {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.card {
+    border: 1px solid #fff;
+    border-radius: 8px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    overflow: hidden;
+    height: 500px;
+    cursor: pointer;
+}
+
+.card-top h1 {
+    font-size: 24px;
+    margin: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.card-top > img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    /* background: black; */
+}
+
+.card-bottom {
+    margin: 10px 20px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+
+.slick-slide > div {
+    margin: 0 10px;
+}
+.slick-list {
+    margin: 0 -10px;
+}
+
+.slick-dots li button:before {
+    color: #fff !important;
+    font-size: 12px !important;
+}
+
+
+/* Footer */
+.footer {
+    background-color: #210340;
+    color: #fff;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+
+
+    .search-form {
+        width: 80%;
+    }
+
+    .search-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .search-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        background-color: #f2f2f2;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    .search-field {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    .search-field label {
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+        color: rgb(255, 150, 84);
+    }
+
+    .input-container {
+        display: flex;
+        align-items: center;
+        background-color: white;
+        border-radius: 5px;
+        padding: 0.5rem;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    .input-container input[type='text'],
+    .input-container input[type='date'],
+    .input-container input[type='range'] {
+        border: none;
+        margin-left: 0.5rem;
+        font-size: 1rem;
+        padding: 0.5rem;
+        outline: none;
+        width: 100%;
+    }
+
+    .icon {
+        font-size: 1.2rem;
+        color: rgb(255, 150, 84);
+    }
+
+    .price-value {
+        margin-left: 0.5rem;
+        font-weight: bold;
+        color: rgb(255, 150, 84);
+    }
+    .search-icon {
+        font-weight: 500;
+    }
+    .search-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        background-color: rgb(255, 150, 84);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 0.5rem;
+        font-size: 1rem;
+        cursor: pointer;
+        margin-top: 1rem;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .search-button:hover {
+        background-color: rgb(255, 113, 25);
+    }
+
+    ::-webkit-calendar-picker-indicator {
+        filter: invert(1);
+    }
+    ::-webkit-calendar-picker-indicator {
+        color: transparent;
+    }
+
+    /* .login-container{
+        width: 80%;
+    } */
+}
+
+
+/* Login.css */
+
+.login-text{
+    margin-top: 10vh;
+}
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  .login-form label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: rgb(255, 150, 84);
+  }
+
+  .login-form input {
+    margin-top: 5px;
+    padding: 5px;
+    font-size: 16px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    outline: none;
+  }
+
+  .login-form button {
+
+    font-weight: bold;
+    background-color: rgb(255, 150, 84);
+    color: white;
+    border: none;
+    border-radius: 5px; padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: all 0.2s ease-in-out;
+    /* margin-top: 10px;
+
+    font-size: 16px;
+     */
+  }
+
+  .login-form button:hover {
+    background-color:rgb(255, 113, 25);
+  }
+  .welcome-form{
+height: 8vh;
+width: 30vh;
+font-weight: bold;
+margin: 0;
+font-size: 24px;
+color: black;
+  }
+
+  .smile{
+color: black;
+    font-size: 30px ;
+  }
+
+/* about page */
+  .about-text{
+    color: #ffffff;
+    font-weight: bold;
+    width: 80%;
+   margin-left: 10%;
+   border:  rgb(255, 150, 84) solid 2px;
+   border-radius: 10px;
+ margin-top: 10vh;
+margin-bottom: 50px;
+  }
+
+
+  /* trip page */
+
+  .loading{
+font-size: 24px;
+font-weight: bold;
+margin-top: 50px;
+margin-bottom: 30px;
+
+  }
